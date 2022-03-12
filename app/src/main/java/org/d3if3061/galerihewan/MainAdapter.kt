@@ -16,6 +16,7 @@ RecyclerView.Adapter<MainAdapter.ViewHolder>(){
             namaTextView.text = hewan.nama
             latinTextView.text = hewan.namaLatin
             imageView.setImageResource(hewan.imageResId)
+            jenis.text = hewan.jenis
 
             root.setOnClickListener {
                 val message = root.context.getString(R.string.message, hewan.nama)
